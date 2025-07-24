@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(210 20% 98%);
+  --foreground: hsl(215 25% 15%);
+
+  --card: hsl(210 20% 98%);
+  --card-foreground: hsl(215 25% 15%);
+
+  --popover: hsl(210 20% 98%);
+  --popover-foreground: hsl(215 25% 15%);
+
+  --primary: hsl(210 60% 48%);
+  --primary-foreground: hsl(210 20% 98%);
+
+  --secondary: hsl(215 20% 92%);
+  --secondary-foreground: hsl(215 25% 25%);
+
+  --muted: hsl(215 20% 92%);
+  --muted-foreground: hsl(215 10% 55%);
+
+  --accent: hsl(210 25% 90%);
+  --accent-foreground: hsl(215 25% 25%);
+
+  --destructive: hsl(0 75% 60%);
+  --destructive-foreground: hsl(210 20% 98%);
+
+  --border: hsl(215 15% 88%);
+  --input: hsl(215 15% 88%);
+  --ring: hsl(210 60% 48%);
+
+  --radius: 0.25rem;
+}
+
+.dark {
+  --background: hsl(215 25% 12%);
+  --foreground: hsl(210 15% 90%);
+
+  --card: hsl(215 25% 12%);
+  --card-foreground: hsl(210 15% 90%);
+
+  --popover: hsl(215 25% 12%);
+  --popover-foreground: hsl(210 15% 90%);
+
+  --primary: hsl(210 60% 60%);
+  --primary-foreground: hsl(215 25% 12%);
+
+  --secondary: hsl(215 25% 18%);
+  --secondary-foreground: hsl(210 15% 90%);
+
+  --muted: hsl(215 25% 18%);
+  --muted-foreground: hsl(215 10% 65%);
+
+  --accent: hsl(215 25% 18%);
+  --accent-foreground: hsl(210 15% 90%);
+
+  --destructive: hsl(0 60% 45%);
+  --destructive-foreground: hsl(210 15% 90%);
+
+  --border: hsl(215 25% 22%);
+  --input: hsl(215 25% 22%);
+  --ring: hsl(210 60% 60%);
+}
+
+* {
+  border-color: var(--border);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+.text-gradient {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.6; }
+}
+
+.animate-pulse {
+  animation: pulse 3s infinite;
+}
+
+.animation-delay-500 {
+  animation-delay: 1.5s;
+}
