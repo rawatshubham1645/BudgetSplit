@@ -173,7 +173,7 @@ budgetsplit/
 
 ## 📧 Contact
 
-For questions or support, reach out via [Your Email or GitHub].
+For questions or support, reach out via [rawatshubham1645@gmail.com].
 
 ---
 
